@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Form</title>
+</head>
+<body>
+    <h2>Appointment Form</h2>
+    <form action="/submit_appointment" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="date">Preferred Date:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="time">Preferred Time:</label></td>
+                <td><input type="time" id="time" name="time" required></td>
+            </tr>
+            <tr>
+                <td><label for="reason">Reason for Appointment:</label></td>
+                <td><textarea id="reason" name="reason" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Book Appointment">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
