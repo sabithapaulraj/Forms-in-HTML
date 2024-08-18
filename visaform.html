@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visa Application Form</title>
+</head>
+<body>
+    <h2>Visa Application Form</h2>
+    <form action="/submit_visa" method="post">
+        <table>
+            <tr>
+                <td><label for="full_name">Full Name:</label></td>
+                <td><input type="text" id="full_name" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="passport_number">Passport Number:</label></td>
+                <td><input type="text" id="passport_number" name="passport_number" required></td>
+            </tr>
+            <tr>
+                <td><label for="nationality">Nationality:</label></td>
+                <td><input type="text" id="nationality" name="nationality" required></td>
+            </tr>
+            <tr>
+                <td><label for="visa_type">Visa Type:</label></td>
+                <td>
+                    <select id="visa_type" name="visa_type" required>
+                        <option value="tourist">Tourist Visa</option>
+                        <option value="business">Business Visa</option>
+                        <option value="student">Student Visa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="travel_dates">Travel Dates:</label></td>
+                <td>
+                    <label for="start_date">From:</label>
+                    <input type="date" id="start_date" name="start_date" required>
+                    <label for="end_date">To:</label>
+                    <input type="date" id="end_date" name="end_date" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="reason">Purpose of Visit:</label></td>
+                <td><textarea id="reason" name="reason" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Apply"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscription Form</title>
+</head>
+<body>
+    <h2>Subscription Form</h2>
+    <form action="/submit_subscription" method="post">
+        <table>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="frequency">Subscription Frequency:</label></td>
+                <td>
+                    <select id="frequency" name="frequency" required>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="category">Preferred Category:</label></td>
+                <td>
+                    <select id="category" name="category" required>
+                        <option value="technology">Technology</option>
+                        <option value="news">News</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Subscribe"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

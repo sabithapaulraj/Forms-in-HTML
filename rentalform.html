@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental Form</title>
+</head>
+<body>
+    <h2>Rental Application Form</h2>
+    <form action="/submit_rental" method="post">
+        <table>
+            <tr>
+                <td><label for="full_name">Full Name:</label></td>
+                <td><input type="text" id="full_name" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Current Address:</label></td>
+                <td><input type="text" id="address" name="address" required></td>
+            </tr>
+            <tr>
+                <td><label for="property_type">Type of Property:</label></td>
+                <td>
+                    <select id="property_type" name="property_type" required>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="condo">Condominium</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="rent_duration">Rental Duration:</label></td>
+                <td>
+                    <select id="rent_duration" name="rent_duration" required>
+                        <option value="6_months">6 Months</option>
+                        <option value="12_months">12 Months</option>
+                        <option value="24_months">24 Months</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="start_date">Start Date:</label></td>
+                <td><input type="date" id="start_date" name="start_date" required></td>
+            </tr>
+            <tr>
+                <td><label for="income">Monthly Income:</label></td>
+                <td><input type="number" id="income" name="income" required></td>
+            </tr>
+            <tr>
+                <td><label for="references">References (optional):</label></td>
+                <td><textarea id="references" name="references" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit Application"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

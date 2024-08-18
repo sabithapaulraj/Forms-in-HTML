@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Form</title>
+</head>
+<body>
+    <h2>Leave Application Form</h2>
+    <form action="/submit_leave" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="employee_id">Employee ID:</label></td>
+                <td><input type="text" id="employee_id" name="employee_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="leave_type">Leave Type:</label></td>
+                <td>
+                    <select id="leave_type" name="leave_type" required>
+                        <option value="sick">Sick Leave</option>
+                        <option value="casual">Casual Leave</option>
+                        <option value="maternity">Maternity Leave</option>
+                        <option value="paternity">Paternity Leave</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="from_date">From Date:</label></td>
+                <td><input type="date" id="from_date" name="from_date" required></td>
+            </tr>
+            <tr>
+                <td><label for="to_date">To Date:</label></td>
+                <td><input type="date" id="to_date" name="to_date" required></td>
+            </tr>
+            <tr>
+                <td><label for="reason">Reason:</label></td>
+                <td><textarea id="reason" name="reason" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
