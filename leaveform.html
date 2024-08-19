@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leave Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Leave Application Form</h2>
-    <form action="/submit_leave" method="post">
-        <table>
-            <tr>
-                <td><label for="name">Name:</label></td>
-                <td><input type="text" id="name" name="name" required></td>
-            </tr>
-            <tr>
-                <td><label for="employee_id">Employee ID:</label></td>
-                <td><input type="text" id="employee_id" name="employee_id" required></td>
-            </tr>
-            <tr>
-                <td><label for="leave_type">Leave Type:</label></td>
-                <td>
-                    <select id="leave_type" name="leave_type" required>
-                        <option value="sick">Sick Leave</option>
-                        <option value="casual">Casual Leave</option>
-                        <option value="maternity">Maternity Leave</option>
-                        <option value="paternity">Paternity Leave</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="from_date">From Date:</label></td>
-                <td><input type="date" id="from_date" name="from_date" required></td>
-            </tr>
-            <tr>
-                <td><label for="to_date">To Date:</label></td>
-                <td><input type="date" id="to_date" name="to_date" required></td>
-            </tr>
-            <tr>
-                <td><label for="reason">Reason:</label></td>
-                <td><textarea id="reason" name="reason" rows="4" cols="50" required></textarea></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Submit"></td>
-            </tr>
-        </table>
+    <form>
+        <h2>Leave Form</h2>
+        <label for="employee-id">Employee ID:</label>
+        <input type="text" id="employee-id" name="employee-id" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="leave-type">Leave Type:</label>
+        <select id="leave-type" name="leave-type" required>
+            <option value="sick">Sick Leave</option>
+            <option value="casual">Casual Leave</option>
+            <option value="earned">Earned Leave</option>
+            <option value="maternity">Maternity Leave</option>
+            <option value="paternity">Paternity Leave</option>
+        </select>
+
+        <label for="startdate">Start Date:</label>
+        <input type="date" id="startdate" name="startdate" required>
+
+        <label for="enddate">End Date:</label>
+        <input type="date" id="enddate" name="enddate" required>
+
+        <label for="reason">Reason for Leave:</label>
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

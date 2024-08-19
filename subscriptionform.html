@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscription Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Subscription Form</h2>
-    <form action="/submit_subscription" method="post">
-        <table>
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email" required></td>
-            </tr>
-            <tr>
-                <td><label for="frequency">Subscription Frequency:</label></td>
-                <td>
-                    <select id="frequency" name="frequency" required>
-                        <option value="daily">Daily</option>
-                        <option value="weekly">Weekly</option>
-                        <option value="monthly">Monthly</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="category">Preferred Category:</label></td>
-                <td>
-                    <select id="category" name="category" required>
-                        <option value="technology">Technology</option>
-                        <option value="news">News</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="sports">Sports</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Subscribe"></td>
-            </tr>
-        </table>
+    <form>
+        <h2>Subscription Form</h2>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subscription-plan">Choose Subscription Plan:</label>
+        <select id="subscription-plan" name="subscription-plan" required>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+            <option value="lifetime">Lifetime</option>
+        </select>
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+
+        <button type="submit">Subscribe</button>
     </form>
 </body>
 </html>
